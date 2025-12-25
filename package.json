@@ -1,0 +1,16 @@
+{
+  "name": "visual-crypto",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Hanief Fatkhan Nashrullah",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server"
+  },
+  "dependencies": {
+    "canvas": "^3.2.0",
+    "live-server": "^1.2.2"
+  }
+}

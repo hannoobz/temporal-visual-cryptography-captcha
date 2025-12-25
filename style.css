@@ -1,0 +1,49 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+.container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+.captcha-area {
+  background: #fff;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+canvas {
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 100%;
+  height: auto;
+}
+.input-group { margin-bottom: 20px; text-align: left; }
+input[type="text"] {
+  width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 8px; font-size: 16px;
+}
+button {
+  padding: 12px 24px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;
+}
+.btn-submit { background: #667eea; color: white; margin-right: 10px;}
+.btn-refresh { background: #e2e8f0; color: #333; }
+.message { margin-top: 20px; padding: 10px; border-radius: 8px; display: none; }
+.message.success { background: #d4edda; color: #155724; }
+.message.error { background: #f8d7da; color: #721c24; }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Temporal Visual Cryptography</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Security Check</h1>
+      <p class="subtitle">
+        Please complete the security verification to proceed.
+      </p>
+
+      <div class="captcha-area" id="captchaArea">
+        <canvas id="temporalCanvas"></canvas>
+        <div class="instruction" style="margin-top: 15px">
+          Focus on the pattern below to reveal the hidden code.
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="userInput">Enter the code you see:</label>
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Code..."
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="button-group">
+        <button class="btn-submit" onclick="checkCaptcha()">Verify</button>
+        <button class="btn-refresh" onclick="generateNewCaptcha()">
+          Get new challenge
+        </button>
+      </div>
+
+      <div id="message" class="message"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
